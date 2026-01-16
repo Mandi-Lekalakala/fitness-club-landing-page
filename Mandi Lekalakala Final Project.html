@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Body Studio</title>
+    <style>
+      body {
+        background-color: #1e1e1e;
+        margin: 0;
+        padding: 0;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/644927389a1ab06f2f12a9fe/d2cef23b-98a3-4e23-9835-e24209de58f5/IMG_4073.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+
+      .container {
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e10a0a;
+        display: flex;
+        width: 100vw;
+      }
+      .center1 {
+        text-align: center;
+        flex: 1;
+        color: white;
+        font-size: 17px;
+        padding: 0px 0px 0px 120px;
+      }
+
+      .theme-button {
+        padding: 10px 10px;
+        background-color: #1e1e1e;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: all 150ms ease-in-out;
+        margin: 10px 30px 10px 0px;
+      }
+
+      .theme-button:active {
+        transform: scale(0.95); /* Scale down when active */
+      }
+
+      .navbar {
+        top: 10px;
+        padding: 60px 0px 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        background-color: rgba(45, 45, 45, 0.9);
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+      }
+      .navbar a {
+        margin: 0 35px;
+        text-decoration: none;
+        font-size: 20px;
+        color: inherit;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 80px;
+        font-weight: bold;
+      }
+      .join {
+        padding: 20px 30px;
+        background-color: #e10a0a;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        transition: all 150ms ease-in-out;
+      }
+      .join:hover {
+        color: #e10a0a;
+        background-color: white;
+      }
+      .centered {
+        text-align: center;
+        background: rgba(45, 45, 45, 0.7);
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 0.1px 0px 0px 0px;
+      }
+
+      h2 {
+        color: white;
+        font-size: 50px;
+        padding: 20px 0px 0px 0px;
+      }
+
+      .paragraph2 {
+        color: white;
+        font-size: 20px;
+      }
+      .paragraph {
+        color: white;
+        font-size: 20px;
+      }
+      h3 {
+        color: white;
+      }
+
+      .pictures {
+        display: grid;
+        width: 840px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        margin: 10px auto;
+      }
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .last-button {
+        padding: 15px 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: all 150ms ease-in-out;
+        margin: 10px;
+      }
+      .last-button:hover {
+        color: black;
+        background-color: white;
+      }
+      footer {
+        color: white;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+      }
+      .contact-us {
+        color: white;
+      }
+      .contact-us2 {
+        color: white;
+      }
+      .dark-contactUs {
+        color: black;
+      }
+      .img-container {
+        position: relative;
+        width: 280px;
+        overflow: hidden;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      .img-container:hover img {
+        transform: scale(1.2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .img-container:hover .overlay {
+        opacity: 1;
+      }
+
+      .dark-theme {
+        top: 10px;
+        padding: 60px 0px 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        color: black;
+      }
+      .dark-theme nav-links {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+      }
+      .dark-theme a {
+        margin: 0 35px;
+        text-decoration: none;
+        font-size: 20px;
+        color: inherit;
+      }
+      .dark-heading {
+        color: black;
+        text-align: center;
+        font-size: 80px;
+        font-weight: bold;
+      }
+      .dark-center {
+        text-align: center;
+        flex: 1;
+        color: black;
+        font-size: 17px;
+        padding: 0px 0px 0px 120px;
+      }
+
+      .join-button {
+        padding: 20px 30px;
+        background-color: #e10a0a;
+        color: black;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        transition: all 150ms ease-in-out;
+      }
+      .join-button:hover {
+        color: #e10a0a;
+        background-color: black;
+      }
+      .light-centered {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 0.1px 0px 0px 0px;
+      }
+      .dark-h2 {
+        color: black;
+        font-size: 50px;
+        padding: 20px 0px 0px 0px;
+      }
+      .dark-paragraph {
+        color: black;
+        font-size: 20px;
+      }
+      .dark-footer {
+        color: black;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="center1">
+        Refer your friends and stand a chance to win THE ULTIMATE Getaway. T&Cs
+        will Apply.
+      </p>
+      <button class="theme-button">Change Theme</button>
+    </div>
+
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="#Clubs">Clubs</a>
+        <a href="#Members">Membership</a>
+        <a href="#Rewards">Rewards</a>
+        <a href="#Classes">Classes</a>
+      </div>
+    </div>
+    <br />
+    <h1>EVERYTHING YOU NEED IS INSIDE</h1>
+    <br />
+    <button id="scrollButton" class="join">Join Now</button>
+    <br />
+    <br />
+    <div id="targetSection">
+      <div class="centered">
+        <h2>REAL REWARDS. REAL PROGRESS</h2>
+        <p class="paragraph">
+          Hit your goals by joining any one of our multiple classes and unlock
+          next-level wellness—weekly rewards, epic discounts, and more.
+        </p>
+        <br />
+
+        <div class="pictures">
+          <div class="img-container">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi_oFJn2yop-qI_MT-Qp1wE8rKnrKgCaY0xw&s"
+              alt="swimming"
+            />
+            <div class="overlay">Aquatic Aerobics</div>
+          </div>
+
+          <div class="img-container">
+            <img
+              src="https://img.freepik.com/premium-photo/boxer-workout-training-girl-with-punching-bag-working-sports-fitness-exercise-strength-athlete-fighter-black-woman-boxing-health-wellness-gym-martial-arts-fight-club_590464-82829.jpg"
+              alt="boxing"
+            />
+            <div class="overlay">Boxing</div>
+          </div>
+
+          <div class="img-container">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-t-0YRDG1SHN9wvzvRTmImNdDVHPWyZFhsA&s"
+              alt="cycling"
+            />
+            <div class="overlay">Cycling</div>
+          </div>
+        </div>
+        <br />
+        <button id="linkButton" class="last-button">Learn More</button>
+        <br />
+        <p class="paragraph2">
+          If you need more information please
+          <a class="contact-us" href="#" id="contactUsLink">Contact Us.</a>
+        </p>
+        <footer>
+          Coded with Love by
+          <a
+            href="https://www.linkedin.com/in/mandi-lekalakala-926a6a261"
+            target="_blank"
+            class="contact-us2"
+            >Mandi Lekalakala.</a
+          >
+        </footer>
+      </div>
+    </div>
+    <script>
+      function nextPage() {
+        window.open(
+          "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389",
+          "_blank"
+        );
+      }
+      let clickButton = document.getElementById("linkButton");
+      clickButton.addEventListener("click", nextPage);
+
+      function scrollToSection() {
+        document
+          .getElementById("targetSection")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+      let scrollButton = document.getElementById("scrollButton");
+      scrollButton.addEventListener("click", scrollToSection);
+
+      function contactUs() {
+        let firstName = prompt("What is your name?");
+        let secondName = prompt("What is your surname?");
+        alert(
+          "Great! " +
+            firstName +
+            " " +
+            secondName +
+            ", we will contact you soon.😊"
+        );
+      }
+
+      let contactButton = document.getElementById("contactUsLink");
+      contactButton.addEventListener("click", contactUs);
+
+      function changeTheme() {
+        let navBar = document.querySelector(".navbar");
+        navBar.classList.add("dark-theme");
+        let heading = document.querySelector("h1");
+        heading.classList.add("dark-heading");
+        let center = document.querySelector(".center1");
+        center.classList.add("dark-center");
+
+        let joining = document.querySelector(".join");
+        joining.classList.add("join-button");
+        let color = document.querySelector(".centered");
+        color.classList.add("light-centered");
+        let heading2 = document.querySelector("h2");
+        heading2.classList.add("dark-h2");
+        let paraGraph = document.querySelector(".paragraph");
+        paraGraph.classList.add("dark-paragraph");
+        let paragraph = document.querySelector(".paragraph2");
+        paragraph.classList.add("dark-paragraph");
+        let contact = document.querySelector(".contact-us");
+        contact.classList.add("dark-contactUs");
+        let conTact = document.querySelector(".contact-us2");
+        conTact.classList.add("dark-contactUs");
+        let lastHeading = document.querySelector("footer");
+        lastHeading.classList.add("dark-footer");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let isDarkTheme = false;
+
+      function changeTheme() {
+        let navBar = document.querySelector(".navbar");
+        let heading = document.querySelector("h1");
+        let center = document.querySelector(".center1");
+        let joining = document.querySelector(".join");
+        let color = document.querySelector(".centered");
+        let heading2 = document.querySelector("h2");
+        let paraGraph = document.querySelector(".paragraph");
+        let paragraph = document.querySelector(".paragraph2");
+        let contact = document.querySelector(".contact-us");
+        let conTact = document.querySelector(".contact-us2");
+        let lastHeading = document.querySelector("footer");
+
+        if (isDarkTheme) {
+          navBar.classList.remove("dark-theme");
+          heading.classList.remove("dark-heading");
+          center.classList.remove("dark-center");
+          joining.classList.remove("join-button");
+          color.classList.remove("light-centered");
+          heading2.classList.remove("dark-h2");
+          paraGraph.classList.remove("dark-paragraph");
+          paragraph.classList.remove("dark-paragraph");
+          contact.classList.remove("dark-contactUs");
+          conTact.classList.remove("dark-contactUs");
+          lastHeading.classList.remove("dark-footer");
+        } else {
+          navBar.classList.add("dark-theme");
+          heading.classList.add("dark-heading");
+          center.classList.add("dark-center");
+          joining.classList.add("join-button");
+          color.classList.add("light-centered");
+          heading2.classList.add("dark-h2");
+          paraGraph.classList.add("dark-paragraph");
+          paragraph.classList.add("dark-paragraph");
+          contact.classList.add("dark-contactUs");
+          conTact.classList.add("dark-contactUs");
+          lastHeading.classList.add("dark-footer");
+        }
+        isDarkTheme = !isDarkTheme;
+      }
+    </script>
+  </body>
+</html>
