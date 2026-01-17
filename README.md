@@ -25,3 +25,12 @@ Writing more structured and maintainable CSS
 
 📌 Notes
 This project was built for learning and practice purposes. It is not affiliated with, endorsed by, or intended to replicate any official brand or commercial website.
+
+## 📸 Project Preview
+
+<p align="center">
+  <img src="images/landing-page-1.png" width="30%" />
+  <img src="images/landing-page-2.png" width="30%" />
+  <img src="images/light-mode-2.png" width="30%" />
+</p>
+
