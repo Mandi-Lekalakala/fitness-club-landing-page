@@ -4,16 +4,16 @@
 </br>
 📖 Project Overview
 </br>
+<p>
 This project is a responsive fitness club landing page built early in my front-end journey to practice layout, styling, and user interaction. The design was inspired by a well-known South African fitness brand and focuses on recreating a clean, modern interface commonly used in fitness and lifestyle websites.
 The project was created to strengthen my understanding of CSS layout techniques and JavaScript-driven interactivity in a real-world style layout.
-
+</p>
 🛠️ Technologies Used:
 <ul>
 <li>HTML</li>
 <li>CSS (Flexbox)</li>
 <li>JavaScript</li>
 </ul>
-</br>
 ✨ Key Features:
 <ul>
 <li>Fully responsive landing page layout</li>
@@ -29,15 +29,17 @@ The project was created to strengthen my understanding of CSS layout techniques 
 <li>Improving problem-solving through layout and styling challenges</li>
 <li>Writing more structured and maintainable CSS</li>
 </ul>
-
+<p>
 📌 Notes
 This project was built for learning and practice purposes. It is not affiliated with, endorsed by, or intended to replicate any official brand or commercial website.
-
-## 📸 Project Preview
-
+</p>
+<div>
+<p>📸 Project Preview:</p>
+</div
+  <div>
 <p align="center">
   <img src="images/landing-page-1.png" width="30%" />
   <img src="images/landing-page-2.png" width="30%" />
   <img src="images/light-mode-2.png" width="30%" />
 </p>
-
+</div>
