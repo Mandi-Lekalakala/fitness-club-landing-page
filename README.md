@@ -1,5 +1,4 @@
 <h2>🏋️ Fitness Club Landing Page (UI Practice)</h2>
-<p>⚠️ This project cannot be hosted publicly due to licensing and usage restrictions.</p>
 <p>
 📖 Project Overview
 </br>
