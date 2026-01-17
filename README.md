@@ -1,5 +1,7 @@
 🏋️ Fitness Club Landing Page (UI Practice)
-
+</br>
+<div>⚠️ This project cannot be hosted publicly due to licensing and usage restrictions.</div>
+</br>
 📖 Project Overview
 </br>
 This project is a responsive fitness club landing page built early in my front-end journey to practice layout, styling, and user interaction. The design was inspired by a well-known South African fitness brand and focuses on recreating a clean, modern interface commonly used in fitness and lifestyle websites.
