@@ -29,6 +29,7 @@ This project is a responsive fitness club landing page built early in my front-e
   </div>
 <p>
 📌 Notes
+</br>
 This project was built for learning and practice purposes. It is not affiliated with, endorsed by, or intended to replicate any official brand or commercial website.
 </p>
 <div>
