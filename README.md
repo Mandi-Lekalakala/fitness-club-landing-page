@@ -9,8 +9,8 @@ Tech Stack
 HTML5
 CSS3
 CSS Flexbox
-Responsive Design (Media Queries)
-JavaScript (if applicable)
+Responsive Design
+JavaScript
 
 Key Features
 
