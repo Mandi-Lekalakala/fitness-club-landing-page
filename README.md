@@ -21,12 +21,13 @@ A modern, responsive fitness landing page built to showcase gym services, member
 - Fully responsive across all screen sizes
 - Hover effects and interactive UI styling
 - Semantic, well-organized HTML structure
+- Dark Mode/Light Mode toglle button
 
 ---
 
 ## Project Objective
 
-This project was built to strengthen my understanding of responsive layout design and Flexbox positioning. It demonstrates my ability to build structured, scalable landing pages that adapt across devices while maintaining a clean and professional UI.
+This project was built to strengthen my understanding of responsive layout design, Dark Mode to Light Mode intergration and Flexbox positioning. It demonstrates my ability to build structured, scalable landing pages that adapt across devices while maintaining a clean and professional UI.
 
 ---
 
