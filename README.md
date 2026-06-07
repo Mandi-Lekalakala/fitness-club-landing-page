@@ -1,26 +1,48 @@
-## Gym Fitness Landing Page
+# Gym Fitness Landing Page
 
-A modern fitness landing page designed to showcase gym services, membership plans, and strong call-to-action sections.
+A modern, responsive fitness landing page built to showcase gym services, membership plans, and compelling call-to-action sections. This project demonstrates clean layout structure, professional UI implementation using core frontend technologies.
 
-This project focuses on clean layout structure, responsive design, and professional UI implementation using core frontend technologies.
+---
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - CSS Flexbox
-- Responsive Design
 - JavaScript
+- Responsive Design
+
+---
 
 ## Key Features
 
-- Structured hero section with clear call-to-action
+- Hero section with a structured layout and clear call-to-action
 - Services and membership plan sections
-- Layout built using CSS Flexbox
-- Fully responsive design across screen sizes
+- Fully responsive across all screen sizes
 - Hover effects and interactive UI styling
-- Semantic and well-organized HTML structure
+- Semantic, well-organized HTML structure
+
+---
 
 ## Project Objective
 
-This project was built to strengthen my understanding of responsive layout design and Flexbox positioning. It demonstrates my ability to build structured, scalable landing pages that adapt across devices while maintaining clean UI design.
+This project was built to strengthen my understanding of responsive layout design and Flexbox positioning. It demonstrates my ability to build structured, scalable landing pages that adapt across devices while maintaining a clean and professional UI.
+
+---
+
+## Homepage
+
+![Homepage](./assets/fitness-homepage.png)
+
+---
+
+## Light Mode
+
+![Light Mode](./assets/light-mode.png)
+
+---
+
+## Dark Mode
+
+![Dark Mode](./assets/dark-mode.png)
+
